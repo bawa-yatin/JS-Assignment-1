@@ -29,7 +29,7 @@ function userList(userData) {
         rowHtml = `<tr id="${userData[i].id}" onclick=userSelectedData(${i})>
             <td id="first_name">${userData[i].first_name}</td>
             <td id="last_name">${userData[i].last_name}</td>
-            <td id="user_name">${userData[i].username}</td>
+            <td id="userName">${userData[i].username}</td>
             <td id="user_employment">${userData[i].employment.title}</td>
             <td id="user_country">${userData[i].address.country}</td>
             <td id="user_action"><a onclick=deleteData(${userData[i].id}) class="user-delete-icon"><i class="fa fa-trash icon"></i></a></td>
