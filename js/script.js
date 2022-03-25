@@ -56,11 +56,10 @@ function getTimeOfDay() {
 function userSelectedData(userObj) {
     document.getElementById("greeting_user").innerHTML = getTimeOfDay() + ' ' + userItems[userObj]["first_name"];
     document.getElementById("user_avatar").setAttribute("src", userItems[userObj]["avatar"]);
-    document.getElementById("unique_id").innerHTML = "Id: " + userItems[userObj]["id"];
-    document.getElementById("user_id").innerHTML = "User Id: " + userItems[userObj]["uid"];
-    document.getElementById("user_password").innerHTML = "User Password: " + userItems[userObj]["password"];
-    document.getElementById("user_social_no").innerHTML = "Social Insurance Number: " + userItems[userObj]["social_insurance_number"];
-    document.getElementById("user_name").innerHTML = "User Name: " + userItems[userObj]["username"];
+    document.getElementById("unique_id").innerHTML = userItems[userObj]["id"];
+    document.getElementById("user_id").innerHTML = userItems[userObj]["uid"];
+    document.getElementById("user_social_no").innerHTML = userItems[userObj]["social_insurance_number"];
+    document.getElementById("user_name").innerHTML = userItems[userObj]["username"];
     document.getElementById("full_name").innerHTML = userItems[userObj]["first_name"] + ' ' + userItems[userObj]["last_name"];
     document.getElementById("user_email").innerHTML = userItems[userObj]["email"];
     document.getElementById("user_dob").innerHTML = userItems[userObj]["date_of_birth"];
@@ -70,9 +69,8 @@ function userSelectedData(userObj) {
     document.getElementById("user_emp").innerHTML = userItems[userObj]["employment"]["title"];
     document.getElementById("user_cc").innerHTML = userItems[userObj]["credit_card"]["cc_number"];
     document.getElementById("user_subs").innerHTML = userItems[userObj]["subscription"]["status"];
-    document.getElementById("subs_plan").innerHTML = "Subscription Plan: " + userItems[userObj]["subscription"]["plan"];
-    document.getElementById("subs_term").innerHTML = "Subscription Term: " + userItems[userObj]["subscription"]["term"];
-    document.getElementById("user_skill").innerHTML = "Skill: " + userItems[userObj]["employment"]["key_skill"];
+    document.getElementById("subs_plan").innerHTML = userItems[userObj]["subscription"]["plan"] + '</br>' + userItems[userObj]["subscription"]["term"];
+    document.getElementById("street_address").innerHTML = userItems[userObj]["address"]["street_address"];
 }
 
 /* Function to delete user item */

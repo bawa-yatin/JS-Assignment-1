@@ -20,7 +20,7 @@
     <h1 class="assignment-heading">Javascript Assignement 1</h1>
     <section class="card-container">
         <div class="card">
-            <table class="user-data-table">
+            <table class="user-data-table" style="min-height: 100%">
                 <thead class="table-heading">
                     <tr id="table-columns">
                         <th>First Name</th>
@@ -36,18 +36,27 @@
         </div>
 
         <div class="card">
-            <div class="user-card">
+            <div class="user-card" style="min-height: 100%">
                 <div class="left">
                     <h2 id="greeting_user"></h2>
-                    <img id="user_avatar" src="" alt="user" width="120" height="120" />
-                    <h3 id="unique_id"></h3>
-                    <h4 class="text-space" id="user_id"></h4>
-                    <h4 class="text-space" id="user_name"></h4>
-                    <h4 class="text-space" id="user_password"></h4>
-                    <h4 class="text-space" id="user_social_no"></h4>
-                    <h4 class="text-space" id="subs_plan"></h4>
-                    <h4 class="text-space" id="subs_term"></h4>
-                    <h4 class="text-space" id="user_skill" style="margin-bottom: 0"></h4>
+                    <img id="user_avatar" src="" alt="user" width="105" height="105" />
+                    <h3 class="card-left-data">ID</h3>
+                    <p class="card-left-text" id="unique_id"></p>
+
+                    <h3 class="card-left-data">User ID</h3>
+                    <p class="card-left-text" id="user_id"></p>
+
+                    <h3 class="card-left-data">User Name</h3>
+                    <p class="card-left-text" id="user_name"></p>
+
+                    <h3 class="card-left-data">Social Number</h3>
+                    <p class="card-left-text" id="user_social_no"></p>
+
+                    <h3 class="card-left-data">Subscription Plan</h3>
+                    <p class="card-left-text" id="subs_plan"></p>
+
+                    <h3 class="card-left-data">Street Address</h3>
+                    <p class="card-left-text" id="street_address" style="margin-bottom: 10px"></p>
                 </div>
                 <div class="right">
                     <div class="info">
@@ -55,16 +64,16 @@
                         <div class="info_data">
                             <div class="data">
                                 <h4>Name</h4>
-                                <p class="data_word_break" id="full_name"></p>
+                                <p id="full_name"></p>
                             </div>
                             <div class="data">
                                 <h4>Email</h4>
-                                <p class="data_word_break" id="user_email"></p>
+                                <p id="user_email"></p>
                             </div>
 
                             <div class="data">
                                 <h4>Date of Birth</h4>
-                                <p class="data_word_break" id="user_dob"></p>
+                                <p id="user_dob"></p>
                             </div>
                         </div>
                     </div>
@@ -74,17 +83,17 @@
                         <div class="projects_data">
                             <div class="data">
                                 <h4>Gender</h4>
-                                <p class="data_word_break" id="user_gender"></p>
+                                <p id="user_gender"></p>
                             </div>
 
                             <div class="data">
                                 <h4>Contact</h4>
-                                <p class="data_word_break" id="user_contact"></p>
+                                <p id="user_contact"></p>
                             </div>
 
                             <div class="data">
                                 <h4>Address</h4>
-                                <p class="data_word_break" id="user_address"></p>
+                                <p id="user_address"></p>
                             </div>
                         </div>
                     </div>
@@ -94,15 +103,15 @@
                         <div class="projects_data">
                             <div class="data">
                                 <h4>Employment Type</h4>
-                                <p class="data_word_break" id="user_emp"></p>
+                                <p id="user_emp"></p>
                             </div>
                             <div class="data">
                                 <h4>Credit Card Details</h4>
-                                <p class="data_word_break" id="user_cc"></p>
+                                <p id="user_cc"></p>
                             </div>
                             <div class="data">
                                 <h4>Subscription</h4>
-                                <p class="data_word_break" id="user_subs"></p>
+                                <p id="user_subs"></p>
                             </div>
                         </div>
                     </div>
